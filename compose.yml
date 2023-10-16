@@ -2,7 +2,7 @@ version: '3'
 name: "videoza"
 services:
   app:
-    image: ghcr.io/mitch1009/videoza:latest
+    image: ghcr.io/thepresidentafrica/videoxa:latest
     ports:
       - 80:80
     restart: always
