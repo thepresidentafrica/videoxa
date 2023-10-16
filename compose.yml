@@ -1,0 +1,8 @@
+version: '3'
+name: "videoza"
+services:
+  app:
+    image: ghcr.io/mitch1009/videoza:latest
+    ports:
+      - 80:80
+    restart: always
