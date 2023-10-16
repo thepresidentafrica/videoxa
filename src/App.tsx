@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeroModule, VideoPlayer } from './modules';
+import { HeroModule } from './modules';
 
 const App: React.FC = () => {
   return (
