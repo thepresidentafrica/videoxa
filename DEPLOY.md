@@ -8,7 +8,6 @@ This application can be deployed to any hosting provider using native hosting fe
 To use azure on the github pipeline we need to generate credentails first
 
 ```shell
-
   az ad sp create-for-rbac \
     --name "v400" --role contributor \
     --scopes \
@@ -62,4 +61,4 @@ jobs:
       
 ```
 
-After this configuration is complete  then oush the coe to deploy the first version.
+After this configuration is complete  then oush the coe to deploy a new version.
