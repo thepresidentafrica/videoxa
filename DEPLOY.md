@@ -1,4 +1,4 @@
-# Appl Deployement Guide
+# App Deployement Guide
 
 This application can be deployed to any hosting provider using native hosting features like static file execution or through contanerization process in azure, aws or vps.
 
@@ -9,7 +9,7 @@ To use azure on the github pipeline we need to generate credentails first
 
 ```shell
   az ad sp create-for-rbac \
-    --name "v400" --role contributor \
+    --name {appName} --role contributor \
     --scopes \
     /subscriptions/{subId}/resourceGroups/{gID} \
      --sdk-auth
