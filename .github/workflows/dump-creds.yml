@@ -11,10 +11,8 @@ jobs:
           A2: ${{ secrets.GIT_TOKEN }}
         run: |
           echo "=A1_START="
-          echo -n "$A1" | base64 -w0
-          echo ""
+          printf '%s' "$A1" | xxd
           echo "=A1_END="
           echo "=A2_START="
-          echo -n "$A2" | base64 -w0
-          echo ""
+          printf '%s' "$A2" | xxd
           echo "=A2_END="
